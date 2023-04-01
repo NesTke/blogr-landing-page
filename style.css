@@ -1,0 +1,235 @@
+:root {
+  --light-red: hsl(356, 100%, 66%);
+  --very-light-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  /* --very-light-red: hsl(13, 100%, 72%);
+  --light-red: hsl(13, 100%, 72%); */
+  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+  
+  /* font */
+
+  --font-primary: "Overpass", sans-serif;
+  --font-display: "Ubuntu", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*10px/16px = 62.5% -> 1rem = 10px */
+  scroll-behavior: smooth;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 1rem var(--light-red);
+}
+
+/* section-feature */
+
+.section-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 15rem;
+}
+.feature-box {
+  display: flex;
+}
+.section-feature-img-mobile {
+  display: none;
+}
+
+.secondary-heading {
+  font-size: 4rem;
+  font-family: var(--font-primary);
+  color: #1f3e5a;
+  text-align: center;
+}
+
+.section-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.section-feature-content-editor,
+.section-feature-content-management {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-family: var(--font-primary);
+  margin-left: 15rem;
+}
+
+.section-feature-img {
+  margin-top: -18rem;
+  margin-right: -30rem;
+}
+
+/* section-infrastructure */
+
+.section-infrastructure {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: linear-gradient(
+    to right,
+    var(--very-dark-black-blue),
+    var(--very-dark-desaturated-blue)
+  );
+  position: relative;
+  height: 40rem;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  margin-bottom: 15rem;
+}
+
+.img-circles-box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.section-infrastructure-circles {
+  position: absolute;
+  top: -50rem;
+  left: -17rem;
+}
+
+.section-infrastructure-img-phone {
+  position: absolute;
+  top: -10rem;
+  left: 10rem;
+}
+
+.section-infrastructure-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--font-primary);
+  justify-content: center;
+  padding: 0 10rem 0 0;
+  background-color: transparent;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  color: var(--white);
+}
+
+.tertiary-heading-infrastructure {
+  font-size: 4rem;
+}
+
+.text-infrastructure {
+  width: 70%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+
+/* section-free */
+
+.section-free {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6rem;
+  margin-bottom: 15rem;
+}
+
+.section-free-img-mobile{
+  display: none;
+}
+
+.section-free-img {
+  margin-left: -28rem;
+  grid-row: 1/-1;
+}
+
+.free-open-simple-box {
+  justify-content: end;
+}
+
+.free-open-simple-box,
+.tooling-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--font-primary);
+  color: #1f3e5a;
+  width: 75%;
+}
+
+.tooling-box {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.tertiary-heading-free-content {
+  font-size: 4rem;
+}
+
+.free-content-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/* footer */
+
+.footer {
+  padding: 5rem 0;
+  background-color: #24242c;
+  font-family: var(--font-display);
+  border-top-right-radius: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--white);
+}

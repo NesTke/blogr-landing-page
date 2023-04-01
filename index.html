@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="query.css">
+  <script defer src="index.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Blogr</title>
+
+</head>
+
+<body>
+  <div class="full-container">
+    <div class="header-cta-box">
+      <img src="img/bg-pattern-intro-desktop.svg" class="header-cta-img" alt="circles">
+      <header class="header">
+        <a href="#">
+          <img class="logo" alt="Blogr logo" src="img/logo.svg" />
+        </a>
+        <div class="nav-cta-box">
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="#">product<svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </a>
+
+              </li>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="#">company<svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </a>
+
+              </li>
+              <li class="main-nav-dropdown-content-item main-nav-item">
+                <a class="main-nav-link main-nav-link--hover" href="#">connect<svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                  </svg>
+                </a>
+                <div class="subnav-list-box">
+                  <ul class="subnav-list">
+                    <li class="subnav-list-item"><a class="subnav-list-link" href="#">Contact</a>
+                    </li>
+                    <li class="subnav-list-item"><a class="subnav-list-link" href="#">Newsletter</a>
+                    </li>
+                    <li class="subnav-list-item"><a class="subnav-list-link" href="#">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-btn-box">
+            <button class="btn-login">login</button>
+            <button class="btn btn--media">sign up</button>
+          </div>
+
+
+        </div>
+        <button class="burger-menu">
+          <svg class="burger-menu__icon">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="cross-menu">
+          <svg class="cross-menu__icon">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </header>
+      <section class="section-cta">
+        <div class="cta-heading-box">
+          <h1 class="primary-heading">A modern publishing platform</h1>
+          <h3 class="tertiary-heading">Grow your audience and build your online brand</h3>
+        </div>
+        <div class="cta-link-box">
+          <a href="#section-free" class="btn">start for free</a>
+          <a href="#section-feature" class="btn btn--learn">learn more</a>
+        </div>
+      </section>
+    </div>
+    <main class="main">
+      <section class="section-feature" id="section-feature">
+        <h2 class="secondary-heading">Designed for the future</h2>
+        <div class="feature-box">
+          <div class="section-feature-content">
+            <div class="section-feature-content-editor">
+              <h3 class="tertiary-heading-feature">Introducing an extensible editor</h3>
+              <p class="feature-text">Blogr features an exceedingly intuitive interface which lets you focus on one
+                thing:
+                creating content. The editor supports management of multiple blogs and allows easy manipulation of
+                embeds
+                such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add
+                functionality or change the looks of a blog.
+              </p>
+            </div>
+            <div class="section-feature-content-management">
+              <h3 class="tertiary-heading-feature">Robust content management</h3>
+              <p class="feature-text">
+                Flexible content management enables users to easily move through posts. Increase
+                the
+                usability of your blog by adding customized categories, sections, format, or flow. With this
+                functionality, you’re in full control.</p>
+            </div>
+          </div>
+          <img src="img/illustration-editor-desktop.svg" alt="Illustration Editor" class="section-feature-img">
+          <img src="img/illustration-editor-mobile.svg" alt="Illustration Editor" class="section-feature-img-mobile">
+        </div>
+      </section>
+
+
+      <section class="section-infrastructure">
+        <div class="img-circles-box">
+          <img src="img/bg-pattern-circles.svg" alt="circles" class="section-infrastructure-circles">
+        </div>
+        <img src="img/illustration-phones.svg" alt="phone" class="section-infrastructure-img-phone">
+        <div class="section-infrastructure-content">
+          <h3 class="tertiary-heading-infrastructure">State of the Art Infrastructure</h3>
+          <p class="text-infrastructure">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </section>
+      <section class="section-free" id="section-free">
+        <img src="img/illustration-laptop-desktop.svg" alt="Laptop" class="section-free-img">
+        <img src="img/illustration-laptop-mobile.svg" alt="Laptop" class="section-free-img-mobile">
+        <div class="free-open-simple-box">
+          <h3 class="tertiary-heading-free-content">Free, open, simple</h3>
+          <p class="free-content-text">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+            tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+        <div class="tooling-box">
+          <h3 class="tertiary-heading-free-content">Powerful tooling</h3>
+          <p class="free-content-text">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
+            a breeze, but capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-box">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="logo" src="img/logo.svg" />
+          </a>
+        </div>
+        <nav class="nav-box">
+          <p class="footer-heading">Product</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Overview</a></li>
+            <li><a class="footer-link" href="#">Pricing</a></li>
+            <li><a class="footer-link" href="#">Marketplace</a></li>
+            <li><a class="footer-link" href="#">Features</a></li>
+            <li><a class="footer-link" href="#">Integrations</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-box">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About</a></li>
+            <li><a class="footer-link" href="#">Team</a></li>
+            <li><a class="footer-link" href="#">Blog</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-box">
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Contact</a></li>
+            <li><a class="footer-link" href="#">Newsletter</a></li>
+            <li><a class="footer-link" href="#">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
